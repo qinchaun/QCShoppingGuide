@@ -1,0 +1,10 @@
+platform :ios, '9.0'
+target 'QCShoppingGuide' do
+
+pod 'AFNetworking'
+pod 'MJExtension'
+pod 'MJRefresh'
+pod 'SDWebImage'
+pod 'SVProgressHUD'
+
+end

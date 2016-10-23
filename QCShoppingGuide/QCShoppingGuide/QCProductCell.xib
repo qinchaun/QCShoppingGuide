@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="QCProductCell">
+            <rect key="frame" x="0.0" y="0.0" width="188" height="268"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="188" height="268"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iZs-Cr-0w5">
+                        <rect key="frame" x="0.0" y="0.0" width="188" height="164"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="164" id="Xz6-aX-kj1"/>
+                            <constraint firstAttribute="width" constant="164" id="phW-fj-mCK"/>
+                            <constraint firstAttribute="height" constant="164" id="xvB-Km-0Xd"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="phW-fj-mCK"/>
+                            </mask>
+                        </variation>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6fG-9G-uXZ">
+                        <rect key="frame" x="79" y="121" width="31" height="26"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <state key="normal" image="PlaceHolderImage_small_31x26_"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7tM-Lk-40D">
+                        <rect key="frame" x="5" y="176" width="183" height="20"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RPK-xl-lSY">
+                        <rect key="frame" x="5" y="238" width="38" height="25"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ead-Uj-DPS">
+                        <rect key="frame" x="157" y="238" width="22" height="25"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="oeD-4p-0a4"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <state key="normal" title="0" image="Search_GiftBtn_Default_12x10_">
+                            <color key="titleColor" red="0.21428285259999999" green="0.21428285259999999" blue="0.21428285259999999" alpha="0.4159482759" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
+                </subviews>
+                <animations/>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <animations/>
+            <constraints>
+                <constraint firstItem="RPK-xl-lSY" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="4Yh-lG-0Ua"/>
+                <constraint firstItem="ead-Uj-DPS" firstAttribute="height" secondItem="RPK-xl-lSY" secondAttribute="height" id="NSu-ba-BBq"/>
+                <constraint firstAttribute="trailing" secondItem="iZs-Cr-0w5" secondAttribute="trailing" id="Rgb-Nz-dfj"/>
+                <constraint firstItem="6fG-9G-uXZ" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="U4e-ij-hI3"/>
+                <constraint firstAttribute="trailing" secondItem="7tM-Lk-40D" secondAttribute="trailing" id="bIM-25-bTl"/>
+                <constraint firstItem="RPK-xl-lSY" firstAttribute="leading" secondItem="7tM-Lk-40D" secondAttribute="leading" id="cAb-pb-Gg4"/>
+                <constraint firstAttribute="bottom" secondItem="RPK-xl-lSY" secondAttribute="bottom" constant="5" id="gsA-2r-trb"/>
+                <constraint firstItem="iZs-Cr-0w5" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="hZ6-o1-OBv"/>
+                <constraint firstItem="7tM-Lk-40D" firstAttribute="top" secondItem="iZs-Cr-0w5" secondAttribute="bottom" constant="12" id="nOX-nE-orX"/>
+                <constraint firstItem="iZs-Cr-0w5" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="opD-gG-Yw4"/>
+                <constraint firstItem="7tM-Lk-40D" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="qGH-cE-Bd7"/>
+                <constraint firstItem="ead-Uj-DPS" firstAttribute="centerY" secondItem="RPK-xl-lSY" secondAttribute="centerY" id="r4J-KK-nls"/>
+                <constraint firstItem="6fG-9G-uXZ" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="rDL-Ta-E3K"/>
+                <constraint firstAttribute="trailing" secondItem="ead-Uj-DPS" secondAttribute="trailing" constant="9" id="yls-kL-eMq"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="4Yh-lG-0Ua"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="likeBtn" destination="ead-Uj-DPS" id="FKp-OP-qze"/>
+                <outlet property="placeholderBtn" destination="6fG-9G-uXZ" id="CbE-LB-nzT"/>
+                <outlet property="priceLabel" destination="RPK-xl-lSY" id="Q9d-8o-jFq"/>
+                <outlet property="productImage" destination="iZs-Cr-0w5" id="5kl-vv-UFa"/>
+                <outlet property="titleLabel" destination="7tM-Lk-40D" id="L3R-Rd-eSR"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="PlaceHolderImage_small_31x26_" width="31" height="26"/>
+        <image name="Search_GiftBtn_Default_12x10_" width="12" height="10"/>
+    </resources>
+</document>

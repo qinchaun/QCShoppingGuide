@@ -1,0 +1,55 @@
+//
+//  PrefixHeader.pch
+//  QCShoppingGuide
+//
+//  Created by tarena on 16/9/27.
+//  Copyright © 2016年 tarena. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+
+#import "UIImage+MRExtension.h"
+#import "UIView+MRExtension.h"
+
+#import "MRConst.h"
+
+#import <AFNetworking.h>
+#import <SVProgressHUD.h>
+#import <MJExtension.h>
+#import <MJRefresh.h>
+#import <UIImageView+WebCache.h>
+
+#ifdef DEBUG    // 测试阶段
+
+#define MRLog(...) NSLog(__VA_ARGS__)
+
+#else   // 发布阶段
+
+#define MRLog(...)
+
+#endif
+
+//API接口
+#define BaseAPI @"http://api.dantangapp.com/"
+
+
+//屏幕宽  高
+#define kScreenW [UIScreen mainScreen].bounds.size.width
+
+#define kScreenH [UIScreen mainScreen].bounds.size.height
+
+// rgb颜色方法
+#define kRGBColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+
+// 随机颜色
+#define kRandomColor kRGBColor(arc4random_uniform(256), arc4random_uniform(256), arc4random_uniform(256))
+
+// 全局主题颜色
+#define kGlobalBg kRGBColor(245, 80, 83)
+
+// 主题背景颜色
+#define kBgColor kRGBColor(240, 240, 240)
+
+#endif /* PrefixHeader_pch */

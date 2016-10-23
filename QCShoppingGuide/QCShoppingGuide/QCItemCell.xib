@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="QCItemCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="111"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="110"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VeH-EX-uLS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="110"/>
+                        <animations/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PYV-Uy-sUE">
+                        <rect key="frame" x="8" y="81" width="42" height="21"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="6vU-M1-JJl"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hT1-Bs-LZm">
+                        <rect key="frame" x="283" y="10" width="32" height="25"/>
+                        <animations/>
+                        <color key="backgroundColor" red="0.21428285256410251" green="0.21428285256410251" blue="0.21428285256410251" alpha="0.51244612068965523" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="OSa-gM-ENQ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <state key="normal" title="0" image="Feed_FavoriteIcon_17x17_"/>
+                        <state key="selected" image="content-details_like_selected_16x16_"/>
+                        <connections>
+                            <action selector="likeBtnClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="rvK-TO-Nb5"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ayc-R4-Jvg">
+                        <rect key="frame" x="145" y="42" width="31" height="26"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <state key="normal" image="PlaceHolderImage_small_31x26_"/>
+                    </button>
+                </subviews>
+                <animations/>
+                <constraints>
+                    <constraint firstItem="VeH-EX-uLS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="GOJ-U7-HHV"/>
+                    <constraint firstItem="Ayc-R4-Jvg" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="VQ1-Z5-bUk"/>
+                    <constraint firstAttribute="bottom" secondItem="PYV-Uy-sUE" secondAttribute="bottom" constant="8" id="bd7-Cr-zLV"/>
+                    <constraint firstAttribute="trailing" secondItem="VeH-EX-uLS" secondAttribute="trailing" id="cnY-av-Jp7"/>
+                    <constraint firstItem="VeH-EX-uLS" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="fPq-7I-WzW"/>
+                    <constraint firstItem="PYV-Uy-sUE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="iWW-4t-sux"/>
+                    <constraint firstItem="Ayc-R4-Jvg" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="lqt-t5-JwL"/>
+                    <constraint firstAttribute="bottom" secondItem="VeH-EX-uLS" secondAttribute="bottom" id="mtz-4X-tOp"/>
+                    <constraint firstItem="hT1-Bs-LZm" firstAttribute="trailing" secondItem="VeH-EX-uLS" secondAttribute="trailing" constant="-10" id="uvr-0w-4b6"/>
+                    <constraint firstItem="hT1-Bs-LZm" firstAttribute="top" secondItem="VeH-EX-uLS" secondAttribute="top" constant="10" id="vMD-5G-sz4"/>
+                </constraints>
+            </tableViewCellContentView>
+            <animations/>
+            <connections>
+                <outlet property="bgImage" destination="VeH-EX-uLS" id="l65-Fb-pdM"/>
+                <outlet property="favoriteBtn" destination="hT1-Bs-LZm" id="qUi-UI-Wwk"/>
+                <outlet property="placeBtn" destination="Ayc-R4-Jvg" id="QsS-jp-JmN"/>
+                <outlet property="titleLabel" destination="PYV-Uy-sUE" id="w1E-az-47z"/>
+            </connections>
+            <point key="canvasLocation" x="265" y="311.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Feed_FavoriteIcon_17x17_" width="17" height="17"/>
+        <image name="PlaceHolderImage_small_31x26_" width="31" height="26"/>
+        <image name="content-details_like_selected_16x16_" width="16" height="16"/>
+    </resources>
+</document>

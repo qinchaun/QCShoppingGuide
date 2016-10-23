@@ -1,0 +1,25 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "26930ded-8a00-4cc6-9ad4-2ab5380e4ed0",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "26930ded-8a00-4cc6-9ad4-2ab5380e4ed0" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "26930ded-8a00-4cc6-9ad4-2ab5380e4ed0" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "442D609F-7586-4E85-B202-BA4394B88F72",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "26930ded-8a00-4cc6-9ad4-2ab5380e4ed0" : "QCShoppingGuide\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "QCShoppingGuide",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "QCShoppingGuide\/QCShoppingGuide.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/www.svnchina.com\/svn\/shoppingguide",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "26930ded-8a00-4cc6-9ad4-2ab5380e4ed0"
+    }
+  ]
+}

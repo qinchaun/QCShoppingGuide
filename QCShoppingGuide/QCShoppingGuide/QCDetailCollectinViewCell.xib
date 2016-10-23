@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="QCDetailCollectinViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="206" height="273"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="206" height="273"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PW1-7b-mD3">
+                        <rect key="frame" x="88" y="124" width="31" height="26"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <state key="normal" image="PlaceHolderImage_small_31x26_"/>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5s2-AN-EBU">
+                        <rect key="frame" x="0.0" y="0.0" width="206" height="273"/>
+                        <animations/>
+                    </imageView>
+                </subviews>
+                <animations/>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <animations/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="5s2-AN-EBU" secondAttribute="bottom" id="48X-dG-yxP"/>
+                <constraint firstItem="PW1-7b-mD3" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="MW2-8Z-MQ9"/>
+                <constraint firstItem="5s2-AN-EBU" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="RY1-6O-pdE"/>
+                <constraint firstItem="PW1-7b-mD3" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="bwK-7d-Qsa"/>
+                <constraint firstAttribute="trailing" secondItem="5s2-AN-EBU" secondAttribute="trailing" id="irL-93-Iww"/>
+                <constraint firstItem="5s2-AN-EBU" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="kkF-PU-ICt"/>
+            </constraints>
+            <connections>
+                <outlet property="bgImage" destination="5s2-AN-EBU" id="AKO-RK-6UA"/>
+                <outlet property="placeholderBtn" destination="PW1-7b-mD3" id="mLY-Z9-kGR"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="PlaceHolderImage_small_31x26_" width="31" height="26"/>
+    </resources>
+</document>
